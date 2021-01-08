@@ -1,9 +1,15 @@
 <resources>
     <string name="app_name">PracticaFinal1</string>
-    <string name="Fragmento2">Fragmento 2</string>
+    <string name="Fragmento1">Et trobes al fragment 1</string>
+    <string name="Fragmento2">Et trobes al fragment 2</string>
     <string name="gotoA" />
     <string name="vesaA">Anar al fragment 1</string>
     <string name="vesaB">Anar al fragment 2</string>
     <string name="vesaC">Anar al fragment 3</string>
-    <string name="Fragmento3">Fragmento 3</string>
+    <string name="Fragmento3">Et trobes al fragment 3</string>
+    <string name="desc">copneu</string>
+    <string name="botoneu">Fes que nevi</string>
+    <string name="neu">Cop de neu</string>
+    <string name="botovent">Fes que bufi el vent</string>
+    <string name="descvent">vent</string>
 </resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="sesentaycuatro">64</dimen>
+    <dimen name="cientoveintiocho">128</dimen>
+    <dimen name="noventa">90</dimen>
+    <dimen name="cuarentaycinco">45</dimen>
+</resources>
