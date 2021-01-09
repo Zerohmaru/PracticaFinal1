@@ -1,24 +1,94 @@
 package com.practica.practicafinal1
 
+import android.content.res.Resources
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.*
+import android.support.v4.*
+import android.util.Log
 import android.widget.Button
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavDirections
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.navOptions
+import androidx.navigation.ui.onNavDestinationSelected
+import com.google.android.material.navigation.NavigationView
 import kotlinx.android.synthetic.main.fragmenta.*
 import kotlinx.android.synthetic.main.fragmentb.*
 import kotlinx.android.synthetic.main.fragmentc.*
+import android.view.Menu
+import android.view.MenuItem
+import androidx.appcompat.widget.Toolbar
+import android.widget.Toast
+//import android.widget.Toolbar
+import androidx.drawerlayout.widget.DrawerLayout
+import androidx.navigation.NavController
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.*
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var appBarConfiguration : AppBarConfiguration
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.inicial)
+
+        /*val toolbar = findViewById<Toolbar>(R.id.toolbar)
+        setSupportActionBar(toolbar)
+
+        val host: NavHostFragment = supportFragmentManager
+            .findFragmentById(R.id.my_nav_host_fragment) as NavHostFragment? ?: return
+        setSupportActionBar(toolbar)
+
+        // Set up Action Bar
+        val navController = host.navController
+
+        appBarConfiguration = AppBarConfiguration(navController.graph)
+
+
+        // You should also remove the old appBarConfiguration setup above
+        val drawerLayout : DrawerLayout? = findViewById(R.id.drawer_layout)
+        appBarConfiguration = AppBarConfiguration(
+            setOf(R.id.fragmenta, R.id.fragmenta),
+            drawerLayout)
+
+        setupActionBar(navController, appBarConfiguration)
+
+        setupNavigationMenu(navController)
+
+        setupBottomNavMenu(navController)
+
+        navController.addOnDestinationChangedListener { _, destination, _ ->
+            val dest: String = try {
+                resources.getResourceName(destination.id)
+            } catch (e: Resources.NotFoundException) {
+                Integer.toString(destination.id)
+            }
+
+            Toast.makeText(this@MainActivity, "Navigated to $dest",
+                Toast.LENGTH_SHORT).show()
+            Log.d("NavigationActivity", "Navigated to $dest")
+        }*/
+
     }
 
+    /*override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        val retValue = super.onCreateOptionsMenu(menu)
+        val navigationView = findViewById<NavigationView>(androidx.navigation.ui.R.id.nav_view)
+        // The NavigationView already has these same navigation items, so we only add
+        // navigation items to the menu here if there isn't a NavigationView
+        if (navigationView == null) {
+            menuInflater.inflate(androidx.navigation.ui.R.menu.overflow_menu, menu)
+            return true
+        }*/
+
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return item.onNavDestinationSelected(findNavController(R.id.fragmenta))
+                || super.onOptionsItemSelected(item)
+    }
     /*override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         inflater.inflate(R.menu.main_menu, menu)
     }*/
@@ -148,6 +218,24 @@ class MainActivity : AppCompatActivity() {
     }
 
 
+    private fun setupBottomNavMenu(navController: NavController) {
+        val bottomNav = findViewById<BottomNavigationView>(R.id.fragmenta)
+        bottomNav?.setupWithNavController(navController)
+    }
 
+    private fun setupNavigationMenu(navController: NavController) {
+//        // In split screen mode, you can drag this view out from the left
+//        // This does NOT modify the actionbar
+        val sideNavView = findViewById<NavigationView>(R.id.nav_view)
+        sideNavView?.setupWithNavController(navController)
+    }
+
+    private fun setupActionBar(navController: NavController,
+                               appBarConfig : AppBarConfiguration) {
+//        // This allows NavigationUI to decide what label to show in the action bar
+//        // By using appBarConfig, it will also determine whether to
+//        // show the up arrow or drawer menu icon
+        setupActionBarWithNavController(navController, appBarConfig)
+    }
 
 }

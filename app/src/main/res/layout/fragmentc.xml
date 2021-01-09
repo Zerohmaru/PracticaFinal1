@@ -80,9 +80,9 @@
 
     <ImageView
         android:id="@+id/imageView11"
-        android:contentDescription="@string/descvent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:contentDescription="@string/descvent"
         app:srcCompat="@drawable/ic_baseline_toys_24"
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="117dp" />

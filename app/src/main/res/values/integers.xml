@@ -2,4 +2,5 @@
 <resources>
     <integer name="quinientos">500</integer>
     <integer name="cien">100</integer>
+    <integer name="dosmil">2000</integer>
 </resources>
