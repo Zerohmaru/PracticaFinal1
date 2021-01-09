@@ -13,7 +13,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.practica.practicafinal1"
+        applicationId "com.copernic.finalsergiomejias"
         minSdkVersion 23
         targetSdkVersion 30
         versionCode 1

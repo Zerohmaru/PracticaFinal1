@@ -1,4 +1,4 @@
-package com.practica.practicafinal1
+package cat.copernic.finalsergiomejias
 
 import org.junit.Test
 

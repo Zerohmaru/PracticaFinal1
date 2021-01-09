@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layoutDescription="@xml/fragmentb_scene"
-    tools:context=".MainActivity">
+    tools:context="cat.copernic.finalsergiomejias.MainActivity">
 
     <Button
         android:id="@+id/btoc"
@@ -110,5 +110,5 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.66" />
 
-    
+
 </androidx.constraintlayout.motion.widget.MotionLayout>

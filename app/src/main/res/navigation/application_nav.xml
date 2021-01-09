@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/fragmenta"
-        android:name="com.practica.practicafinal1.MainActivity$FragmentA"
+        android:name="cat.copernic.finalsergiomejias.MainActivity$FragmentA"
         android:label="fragmenta"
         tools:layout="@layout/fragmenta" >
         <action
@@ -19,7 +19,7 @@
     </fragment>
     <fragment
         android:id="@+id/fragmentb"
-        android:name="com.practica.practicafinal1.MainActivity$FragmentB"
+        android:name="cat.copernic.finalsergiomejias.MainActivity$FragmentB"
         android:label="fragmentb"
         tools:layout="@layout/fragmenta" >
         <action
@@ -31,7 +31,7 @@
     </fragment>
     <fragment
         android:id="@+id/fragmentc"
-        android:name="com.practica.practicafinal1.MainActivity$FragmentC"
+        android:name="cat.copernic.finalsergiomejias.MainActivity$FragmentC"
         android:label="fragmentc"
         tools:layout="@layout/fragmentb" >
         <action

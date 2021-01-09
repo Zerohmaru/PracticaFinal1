@@ -1,32 +1,22 @@
-package com.practica.practicafinal1
+package cat.copernic.finalsergiomejias
 
-import android.content.res.Resources
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.*
-import android.support.v4.*
-import android.util.Log
-import android.widget.Button
 import androidx.fragment.app.Fragment
-import androidx.navigation.NavDirections
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
-import androidx.navigation.navOptions
 import androidx.navigation.ui.onNavDestinationSelected
 import com.google.android.material.navigation.NavigationView
 import kotlinx.android.synthetic.main.fragmenta.*
 import kotlinx.android.synthetic.main.fragmentb.*
 import kotlinx.android.synthetic.main.fragmentc.*
-import android.view.Menu
 import android.view.MenuItem
-import androidx.appcompat.widget.Toolbar
-import android.widget.Toast
 //import android.widget.Toolbar
-import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.NavController
-import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.*
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.practica.practicafinal1.R
 
 class MainActivity : AppCompatActivity() {
     private lateinit var appBarConfiguration : AppBarConfiguration

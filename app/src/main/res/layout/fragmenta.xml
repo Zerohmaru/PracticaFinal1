@@ -5,7 +5,7 @@
     android:id="@+id/constraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context="cat.copernic.finalsergiomejias.MainActivity">
     Toolbar toolbar = (Toolbar) view.findViewById(R.id.app_bar_detail);
     ((ActionBarActivity) getActivity()).setSupportActionBar(toolbar);
     ((ActionBarActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(true);
