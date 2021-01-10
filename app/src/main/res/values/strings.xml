@@ -13,4 +13,7 @@
     <string name="botovent">Fes que bufi el vent</string>
     <string name="descvent">vent</string>
     <string name="about">About</string>
+    <string name="Fragmento1Titulo">Fragment 1</string>
+    <string name="Fragmento2Titulo">Fragment 2</string>
+    <string name="Fragmento3Titulo">Fragment 3</string>
 </resources>
